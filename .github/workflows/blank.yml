@@ -6,22 +6,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: update clash
+      with:
+        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+        fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
+    - name: Create local changes
+      #update clash
       run: |
         wget -O ./clash 'https://convert.v2ray-subscribe.workers.dev/?url=https://raw.githubusercontent.com/sattheptonghop/4g/main/v2ray&sni=dl.kgvn.garenanow.com&flag=clash'
-    - name: edit clash
-      run: |
         sed -i 's/select,/url-test,/g' ./clash
         sed -i 's|)"] }|)"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60}|g' clash
         sed -i 's/cipher: http/cipher: auto/g' ./clash
-    - name: Commit files # transfer the new html files back into the repository
+    - name: Commit files
       run: |
-        git config --global user.name "sattheptonghop"
-        git config --global user.email "tuananh88c25@gmail.com"
-        git add ./clash
-        git commit -m "Update clash"
-    - name: Push changes # push the output folder to your repo
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git commit -a -m "Add changes"
+    - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        force: true
+        branch: ${{ github.ref }}
