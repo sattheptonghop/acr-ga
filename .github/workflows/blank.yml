@@ -14,13 +14,12 @@ jobs:
         sed -i 's/select,/url-test,/g' ./clash
         sed -i 's|)"] }|)"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60}|g' clash
         sed -i 's/cipher: http/cipher: auto/g' ./clash
-#- name: copy clash1
+    #- name: copy clash1
     #  run: mkdir build && cp clash1 build
     - name: Commit files # transfer the new html files back into the repository
       run: |
         git config --global user.email "tuananh88c25@gmail.com"
         git config --global user.name "sattheptonghop"
-      # git config --global init.defaultBranch main
         git branch --set-upstream-to main
         git add ./clash
         git commit -m "Update clash"
