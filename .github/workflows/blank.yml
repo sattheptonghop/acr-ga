@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        ref: ${{ github.head_ref }}
+        persist-credentials: false
         fetch-depth: 0
     - name: Create local changes
       #update clash
@@ -21,10 +21,11 @@ jobs:
         ls
     - name: Commit files
       run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git commit -a -m "Add changes"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        branch: ${{ github.head_ref }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
