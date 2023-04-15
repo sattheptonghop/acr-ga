@@ -20,7 +20,7 @@ jobs:
       run: |
         #sed -i 's/select,/select,/p' clash
         sed -i 's/select,/url-test,/g' clash
-        sed -i 's/"]/"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60/g' clash
+        sed -i 's/"] \}/"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60 \}/g' clash
         sed -i 's/cipher: http/cipher: auto/2g' clash
         #sed -i 's/T.ME\/SHARE_V2RAY_FILE/$(date)/1g' clash
         #sed -i '/ (1)/d' clash
