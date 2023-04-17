@@ -19,7 +19,8 @@ jobs:
     - name: Edit clash
       run: |
         #sed -i 's/select,/select,/p' clash
-        sed -i 's/select,/url-test,/g' clash
+        #sed -i 's/select,/url-test,/g' clash
+        sed -i 's/select,/fallback,/g' clash
         sed -i 's/cipher: http/cipher: auto/g' clash
             #sed -i 's/\] \}/\], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60 \}/2g' clash
         sed -i 's/"] }/"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 30 }/g' clash
