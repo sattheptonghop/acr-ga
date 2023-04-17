@@ -24,7 +24,7 @@ jobs:
         sed -i 's/cipher: http/cipher: auto/g' clash
             #sed -i 's/\] \}/\], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60 \}/2g' clash
         sed -i 's/"] }/"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 30 }/g' clash
-        sed -i "s/T.ME\/SHARE_V2RAY_FILE/$(date +'%Y-%m-%d-%H-%M-%S GMT%:z' --date='TZ="Asia/Ho_Chi_Minh" now)/1g" clash
+        sed -i "s/T.ME\/SHARE_V2RAY_FILE/$(date +'%Y-%m-%d-%H-%M-%S GMT%:z' --date='TZ="Asia/Ho_Chi_Minh")/1g" clash
             #sed -i '/ (1)/d' clash
             #sed -i '/ (2)/d' clash
     - name: Commit files
