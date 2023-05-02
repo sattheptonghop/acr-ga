@@ -17,9 +17,8 @@ dns:
   fallback: ['https://dns.google/dns-query', 'https://dns.cloudflare.com/dns-query', 'tls://8.8.4.4:853']
   fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:    
-  - {name: "5G bất tử 1", server: 128.199.213.65, port: 80, type: vmess, uuid: f91a876b-eae4-425e-9005-7e6117497753, password: f91a876b-eae4-425e-9005-7e6117497753, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "5G bất tử 2", server: 167.172.89.233, port: 80, type: vmess, uuid: 0c15308b-aa00-4b4d-fc1c-7bd971389ced, password: 0c15308b-aa00-4b4d-fc1c-7bd971389ced, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "File 10", server: 54.36.103.107, port: 80, type: vmess, uuid: 556eddfa-7a44-43d8-82bd-7c1792fc563c, password: 556eddfa-7a44-43d8-82bd-7c1792fc563c, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/vmess/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "CLOUD IDC (GARENA)", server: 171.244.63.211, port: 80, type: vmess, uuid: 4695a1a5-3a03-47c4-be8a-9982432baea2, password: 4695a1a5-3a03-47c4-be8a-9982432baea2, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/zenpn.me", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "CLOUD IDC (GARENA) (TLS)", server: 171.244.63.211, port: 443, type: vmess, uuid: 4695a1a5-3a03-47c4-be8a-9982432baea2, password: 4695a1a5-3a03-47c4-be8a-9982432baea2, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "maxspeed4g.site"}}
   - {name: "Germany 1 - Garena", server: germany-1.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/4g.mkvn.net", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Germany 1 - Garena (1)", server: germany-1.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/4g.mkvn.net", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Germany 1 - Tiktok", server: germany-1.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/4g.mkvn.net", headers: {Host: dl.kgvn.garenanow.com}}}
@@ -27,11 +26,12 @@ proxies:
   - {name: "Hà Nội LQ 🇻🇳", server: max1.flash5g.com, port: 80, type: vmess, uuid: 770f148d-e521-41bf-8a33-7626485f6723, password: 770f148d-e521-41bf-8a33-7626485f6723, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/AnhBin", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Hà Nội Tiktok 🇻🇳", server: max2.flash5g.com, port: 80, type: vmess, uuid: 770f148d-e521-41bf-8a33-7626485f6723, password: 770f148d-e521-41bf-8a33-7626485f6723, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/AnhBin", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Mobifone 🇻🇳", server: max3.flash5g.com, port: 80, type: vmess, uuid: 770f148d-e521-41bf-8a33-7626485f6723, password: 770f148d-e521-41bf-8a33-7626485f6723, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/AnhBin", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "Singapore 2", server: 170.187.197.238, port: 80, type: vmess, uuid: 4695a1a5-3a03-47c4-be8a-9982432baea2, password: 4695a1a5-3a03-47c4-be8a-9982432baea2, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/zenpn.me", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "Singapore 2 (TLS)", server: 170.187.197.238, port: 443, type: vmess, uuid: 4695a1a5-3a03-47c4-be8a-9982432baea2, password: 4695a1a5-3a03-47c4-be8a-9982432baea2, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "maxspeed4g.site"}}
   - {name: "Singapore 2 - Garena", server: sing-2.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/4g.mkvn.net", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Singapore 2 - Garena (1)", server: sing-2.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/4g.mkvn.net", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Singapore 2 - Tiktok", server: sing-2.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/4g.mkvn.net", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Singapore 2 - Tiktok (1)", server: sing-2.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/4g.mkvn.net", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "TTH-VN", server: vpn.choomai.xyz, port: 80, type: vmess, uuid: b3b67842-78f7-4706-dae5-38a47d2180ef, password: b3b67842-78f7-4706-dae5-38a47d2180ef, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "VIETTEL🇻🇳LQ Bến Tre 2 Free", server: bentre2.hoangai.fun, port: 80, type: vmess, uuid: dcc2ce7b-537c-431b-a98b-f6ebe4c8bec7, password: dcc2ce7b-537c-431b-a98b-f6ebe4c8bec7, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/hoangai.fun", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "VIETTEL🇻🇳LQ Bến Tre 4 Free", server: bentre4.hoangai.fun, port: 80, type: vmess, uuid: dcc2ce7b-537c-431b-a98b-f6ebe4c8bec7, password: dcc2ce7b-537c-431b-a98b-f6ebe4c8bec7, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/hoangai.fun", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "VIETTEL🇻🇳TLS 2 LQ Free", server: bentre2.hoangai.fun, port: 443, type: trojan, uuid: dcc2ce7b-537c-431b-a98b-f6ebe4c8bec7, password: dcc2ce7b-537c-431b-a98b-f6ebe4c8bec7, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
@@ -48,47 +48,64 @@ proxies:
   - {name: "Việt Nam 2 - Tiktok (1)", server: vietnam-2.4g.mkvn.net, port: 80, type: vmess, uuid: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, password: 952e97d2-17ef-4e42-b8aa-c9f892ca4eed, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/4g.mkvn.net", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Việt Nam LQ 🇻🇳", server: max.flash5g.com, port: 80, type: vmess, uuid: 770f148d-e521-41bf-8a33-7626485f6723, password: 770f148d-e521-41bf-8a33-7626485f6723, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/AnhBin", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "Việt Nam Pro 🇻🇳", server: max6.flash5g.com, port: 80, type: vmess, uuid: 770f148d-e521-41bf-8a33-7626485f6723, password: 770f148d-e521-41bf-8a33-7626485f6723, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/AnhBin", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "sg-lb.vhax.net", server: sg-lb.vhax.net, port: 443, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, password: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: ws, ws-opts: {path: "/sshkit/thanh2/643939893c519/", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "sg-lb.vhax.net (1)", server: sg-lb.vhax.net, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, password: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/sshkit/thanh2/643939893c519/", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "vipprook", server: 128.199.213.65, port: 80, type: vmess, uuid: 48de9e9f-717a-4cc6-9537-87b588a33c9d, password: 48de9e9f-717a-4cc6-9537-87b588a33c9d, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "∞G Ultimate 1 ( t.me/v2ray_share_file )", server: bentre4.hoangai.fun, port: 80, type: vmess, uuid: be6a69c6-6fe2-499b-d9ca-af2b270512a1, password: be6a69c6-6fe2-499b-d9ca-af2b270512a1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/v2ray_share_file", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "∞G Ultimate 1 ( t.me/v2ray_share_file ) (1)", server: bentre4.hoangai.fun, port: 80, type: vmess, uuid: be6a69c6-6fe2-499b-d9ca-af2b270512a1, password: be6a69c6-6fe2-499b-d9ca-af2b270512a1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/v2ray_share_file", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "∞G Ultimate 2 ( t.me/v2ray_share_file )", server: bentre2.hoangai.fun, port: 80, type: vmess, uuid: b307a20a-78f1-464f-c864-89914ade402c, password: b307a20a-78f1-464f-c864-89914ade402c, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/v2ray_share_file", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "∞G Ultimate 2 ( t.me/v2ray_share_file ) (1)", server: bentre2.hoangai.fun, port: 80, type: vmess, uuid: b307a20a-78f1-464f-c864-89914ade402c, password: b307a20a-78f1-464f-c864-89914ade402c, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/v2ray_share_file", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇭🇰 HONGKONG 01", server: 20.239.94.9, port: 80, type: vmess, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/daily4gsieure.site", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇭🇰tltvpn hk (1)⚡", server: hk.tltvpn.xyz, port: 80, type: vmess, uuid: 60695296-3027-4935-9f5a-758a2d939da6, password: 60695296-3027-4935-9f5a-758a2d939da6, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇭🇰tltvpn hk (1)⚡ (1)", server: hk.tltvpn.xyz, port: 80, type: vmess, uuid: e52f46c6-2e84-4359-b955-6f4b6620e469, password: e52f46c6-2e84-4359-b955-6f4b6620e469, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇭🇰tltvpn hk (1)⚡ (2)", server: hk.tltvpn.xyz, port: 80, type: vmess, uuid: 8fe451d2-6b8e-4d8d-8aa2-723f687299af, password: 8fe451d2-6b8e-4d8d-8aa2-723f687299af, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇭🇰tltvpn hk (1)⚡ (3)", server: hk.tltvpn.xyz, port: 80, type: vmess, uuid: a50f6ab1-c18d-48b8-aa7b-6a26066cd384, password: a50f6ab1-c18d-48b8-aa7b-6a26066cd384, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇭🇰tltvpn hk (2)⚡", server: hk.tltvpn.xyz, port: 443, type: trojan, uuid: 60695296-3027-4935-9f5a-758a2d939da6, password: 60695296-3027-4935-9f5a-758a2d939da6, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇭🇰tltvpn hk (2)⚡ (1)", server: hk.tltvpn.xyz, port: 443, type: trojan, uuid: e52f46c6-2e84-4359-b955-6f4b6620e469, password: e52f46c6-2e84-4359-b955-6f4b6620e469, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇭🇰tltvpn hk (2)⚡ (2)", server: hk.tltvpn.xyz, port: 443, type: trojan, uuid: 8fe451d2-6b8e-4d8d-8aa2-723f687299af, password: 8fe451d2-6b8e-4d8d-8aa2-723f687299af, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇭🇰tltvpn hk (2)⚡ (3)", server: hk.tltvpn.xyz, port: 443, type: trojan, uuid: a50f6ab1-c18d-48b8-aa7b-6a26066cd384, password: a50f6ab1-c18d-48b8-aa7b-6a26066cd384, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
   - {name: "🇯🇵 Public JP 1", server: jp.fuzzypn.me, port: 80, type: vmess, uuid: a1a2cfbe-ba38-429d-a31d-ce94cd50cae6, password: a1a2cfbe-ba38-429d-a31d-ce94cd50cae6, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/fuzzypn", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇯🇵 Public JP 2", server: jp.fuzzypn.me, port: 443, type: vmess, uuid: a1a2cfbe-ba38-429d-a31d-ce94cd50cae6, password: a1a2cfbe-ba38-429d-a31d-ce94cd50cae6, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "fuzzypn"}}
+  - {name: "🇯🇵 server 80 [7] nền LQ", server: jp.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇯🇵 server 80 [7] nền TIKTOK", server: jp.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇯🇵 server 80 [7] nền mobiedu", server: jp.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇯🇵 server 🔐[7] nền LQ", server: jptj.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇯🇵 server 🔐[7] nền TIKTOK", server: jptj.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇯🇵 server 🔐[7] nền mobiedu", server: jptj.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇯🇵tltvpn nhật (4) 🎮", server: japan.tltvpn.xyz, port: 443, type: trojan, uuid: 60695296-3027-4935-9f5a-758a2d939da6, password: 60695296-3027-4935-9f5a-758a2d939da6, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇯🇵tltvpn nhật (4) 🎮 (1)", server: japan.tltvpn.xyz, port: 443, type: trojan, uuid: e52f46c6-2e84-4359-b955-6f4b6620e469, password: e52f46c6-2e84-4359-b955-6f4b6620e469, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇯🇵tltvpn nhật (4) 🎮 (2)", server: japan.tltvpn.xyz, port: 443, type: trojan, uuid: 8fe451d2-6b8e-4d8d-8aa2-723f687299af, password: 8fe451d2-6b8e-4d8d-8aa2-723f687299af, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇯🇵tltvpn nhật (4) 🎮 (3)", server: japan.tltvpn.xyz, port: 443, type: trojan, uuid: a50f6ab1-c18d-48b8-aa7b-6a26066cd384, password: a50f6ab1-c18d-48b8-aa7b-6a26066cd384, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
   - {name: "🇸🇬 Public SG 1", server: sg.fuzzypn.me, port: 80, type: vmess, uuid: a1a2cfbe-ba38-429d-a31d-ce94cd50cae6, password: a1a2cfbe-ba38-429d-a31d-ce94cd50cae6, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/fuzzypn", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇸🇬 Public SG 2", server: sg.fuzzypn.me, port: 443, type: vmess, uuid: a1a2cfbe-ba38-429d-a31d-ce94cd50cae6, password: a1a2cfbe-ba38-429d-a31d-ce94cd50cae6, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "fuzzypn"}}
-  - {name: "🇸🇬 zingfast Singapore (1)", server: 165.22.109.130, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇸🇬 zingfast Singapore (1) (1)", server: 165.22.109.130, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇸🇬 zingfast Singapore (10)", server: 178.128.217.14, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇸🇬 zingfast Singapore (10) (1)", server: 178.128.217.14, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇸🇬 zingfast Singapore (11)", server: 178.128.209.143, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇸🇬 zingfast Singapore (11) (1)", server: 178.128.209.143, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇸🇬 zingfast Singapore (12)", server: 178.128.209.143, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇸🇬 zingfast Singapore (12) (1)", server: 178.128.209.143, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇸🇬 zingfast Singapore (2)", server: 165.22.109.130, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇸🇬 zingfast Singapore (2) (1)", server: 165.22.109.130, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇸🇬 zingfast Singapore (3)", server: 165.22.109.121, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇸🇬 zingfast Singapore (3) (1)", server: 165.22.109.121, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇸🇬 zingfast Singapore (4)", server: 165.22.109.121, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇸🇬 zingfast Singapore (4) (1)", server: 165.22.109.121, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇸🇬 zingfast Singapore (5)", server: 165.22.105.240, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇸🇬 zingfast Singapore (5) (1)", server: 165.22.105.240, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇸🇬 zingfast Singapore (6)", server: 165.22.105.240, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇸🇬 zingfast Singapore (6) (1)", server: 165.22.105.240, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇸🇬 zingfast Singapore (7)", server: 157.230.242.199, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇸🇬 zingfast Singapore (7) (1)", server: 157.230.242.199, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇸🇬 zingfast Singapore (8)", server: 157.230.242.199, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇸🇬 zingfast Singapore (8) (1)", server: 157.230.242.199, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇸🇬 zingfast Singapore (9)", server: 178.128.217.14, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇸🇬 zingfast Singapore (9) (1)", server: 178.128.217.14, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬 server  🔐 [3] nền LQ", server: singtj2.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇸🇬 server  🔐 [3] nền TIKTOK", server: singtj2.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇸🇬 server  🔐 [3] nền mobiedu", server: singtj2.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇸🇬 server 80 [2] nền LQ", server: singvm1.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬 server 80 [2] nền TIKTOK", server: singvm1.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬 server 80 [2] nền mobiedu", server: singvm1.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬 server 80 [3] nền LQ", server: singvm2z.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬 server 80 [3] nền TIKTOK", server: singvm2z.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬 server 80 [3] nền mobiedu", server: singvm2z.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬 server 🔐[2] nền LQ", server: singtj1.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇸🇬 server 🔐[2] nền TIKTOK", server: singtj1.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇸🇬 server 🔐[2] nền mobiedu", server: singtj1.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇸🇬Singapore 02", server: 143.198.84.99, port: 80, type: vmess, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/daily4gsieure.site", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬Singapore VIP", server: sin.daily4g.com, port: 80, type: vmess, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/daily4gsieure.site", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬Singapore VIP TLS", server: sin.daily4g.com, port: 443, type: vmess, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "daily4g.com"}}
+  - {name: "🇸🇬tltvpn Sing (2)⚡", server: sing2.tltvpn.xyz, port: 80, type: vmess, uuid: 60695296-3027-4935-9f5a-758a2d939da6, password: 60695296-3027-4935-9f5a-758a2d939da6, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬tltvpn Sing (2)⚡ (1)", server: sing2.tltvpn.xyz, port: 80, type: vmess, uuid: e52f46c6-2e84-4359-b955-6f4b6620e469, password: e52f46c6-2e84-4359-b955-6f4b6620e469, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬tltvpn Sing (2)⚡ (2)", server: sing2.tltvpn.xyz, port: 80, type: vmess, uuid: 8fe451d2-6b8e-4d8d-8aa2-723f687299af, password: 8fe451d2-6b8e-4d8d-8aa2-723f687299af, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬tltvpn Sing (2)⚡ (3)", server: sing2.tltvpn.xyz, port: 80, type: vmess, uuid: a50f6ab1-c18d-48b8-aa7b-6a26066cd384, password: a50f6ab1-c18d-48b8-aa7b-6a26066cd384, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬tltvpn Sing (4) 🎮", server: sing2.tltvpn.xyz, port: 80, type: vmess, uuid: 60695296-3027-4935-9f5a-758a2d939da6, password: 60695296-3027-4935-9f5a-758a2d939da6, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬tltvpn Sing (4) 🎮 (1)", server: sing2.tltvpn.xyz, port: 80, type: vmess, uuid: e52f46c6-2e84-4359-b955-6f4b6620e469, password: e52f46c6-2e84-4359-b955-6f4b6620e469, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬tltvpn Sing (4) 🎮 (2)", server: sing2.tltvpn.xyz, port: 80, type: vmess, uuid: 8fe451d2-6b8e-4d8d-8aa2-723f687299af, password: 8fe451d2-6b8e-4d8d-8aa2-723f687299af, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇸🇬tltvpn Sing (4) 🎮 (3)", server: sing2.tltvpn.xyz, port: 80, type: vmess, uuid: a50f6ab1-c18d-48b8-aa7b-6a26066cd384, password: a50f6ab1-c18d-48b8-aa7b-6a26066cd384, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇺🇸 Public US 01", server: us.fuzzypn.me, port: 80, type: vmess, uuid: a1a2cfbe-ba38-429d-a31d-ce94cd50cae6, password: a1a2cfbe-ba38-429d-a31d-ce94cd50cae6, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/fuzzypn", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇺🇸 Public US 02", server: us.fuzzypn.me, port: 443, type: vmess, uuid: a1a2cfbe-ba38-429d-a31d-ce94cd50cae6, password: a1a2cfbe-ba38-429d-a31d-ce94cd50cae6, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "fuzzypn"}}
-  - {name: "🇻🇳  zingfast Vinaphone (1)", server: 14.225.33.208, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti1.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳  zingfast Vinaphone (1) (1)", server: 14.225.33.208, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti1.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 ANTIDDOS 01 (HN)⚡", server: 14.225.33.169, port: 80, type: vmess, uuid: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, password: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/fast4g.me", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 ANTIDDOS 03 (HCM)⚡", server: 14.225.245.25, port: 80, type: vmess, uuid: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, password: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/fast4g.me", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇺🇸 server 80 [6] nền LQ", server: my.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇺🇸 server 80 [6] nền TIKTOK", server: my.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇺🇸 server 80 [6] nền mobiedu", server: my.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇺🇸 server 🔐[6] nền LQ", server: mytj.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇺🇸 server 🔐[6] nền TIKTOK", server: mytj.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇺🇸 server 🔐[6] nền mobiedu", server: mytj.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
   - {name: "🇻🇳 LQ-1 (t.me/share_v2ray_file)", server: vinalol.v6.rocks, port: 80, type: vmess, uuid: a70fd40c-8afc-4384-90de-7453f8e687f2, password: a70fd40c-8afc-4384-90de-7453f8e687f2, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "", headers: {Host: dl.kgvn.garenanow.com}}}
   - {name: "🇻🇳 LQ-2 (t.me/share_v2ray_file)", server: vinasoi.h4ck.me, port: 443, type: vmess, uuid: cfc2ab4e-0d67-4ab2-b653-09296047e415, password: cfc2ab4e-0d67-4ab2-b653-09296047e415, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "🇻🇳 LQ-3 (t.me/share_v2ray_file)", server: vinalol.h4ck.me, port: 443, type: vmess, uuid: cfc2ab4e-0d67-4ab2-b653-09296047e415, password: cfc2ab4e-0d67-4ab2-b653-09296047e415, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
@@ -101,78 +118,51 @@ proxies:
   - {name: "🇻🇳 Tiktok-3 (t.me/share_v2ray_file)", server: vinalol.h4ck.me, port: 443, type: vmess, uuid: cfc2ab4e-0d67-4ab2-b653-09296047e415, password: cfc2ab4e-0d67-4ab2-b653-09296047e415, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "🇻🇳 Tiktok-4 (t.me/share_v2ray_file)", server: vinacon.v6.rocks, port: 443, type: vmess, uuid: cfc2ab4e-0d67-4ab2-b653-09296047e415, password: cfc2ab4e-0d67-4ab2-b653-09296047e415, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
   - {name: "🇻🇳 Tiktok-5 (t.me/share_v2ray_file)", server: vinasoi.v6.rocks, port: 80, type: vmess, uuid: cf4364d0-69dd-4624-829b-8652549dcc3e, password: cf4364d0-69dd-4624-829b-8652549dcc3e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/vpngiare.net", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Antiddos (13)", server: 14.225.33.142, port: 80, type: vmess, uuid: 777fa990-2ea0-4df4-b930-2e707251e4dd, password: 777fa990-2ea0-4df4-b930-2e707251e4dd, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Antiddos (14)", server: 14.225.33.142, port: 443, type: vmess, uuid: 777fa990-2ea0-4df4-b930-2e707251e4dd, password: 777fa990-2ea0-4df4-b930-2e707251e4dd, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Mobifone (1)", server: 14.225.33.208, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti2.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Mobifone (1) (1)", server: 14.225.33.208, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti2.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Mobifone (2)", server: 14.225.33.89, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti4.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Mobifone (2) (1)", server: 14.225.33.89, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti4.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Mobifone (3)", server: 14.225.33.38, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti6.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Mobifone (3) (1)", server: 14.225.33.38, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti6.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Mobifone (4)", server: 14.225.33.237, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti8.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Mobifone (4) (1)", server: 14.225.33.237, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti8.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Mobifone (5)", server: 14.225.33.139, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti10.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Mobifone (5) (1)", server: 14.225.33.139, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti10.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Mobifone (6)", server: 14.225.33.189, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti12.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Mobifone (6) (1)", server: 14.225.33.189, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti12.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Mobifone (7)", server: 14.225.33.142, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Vinaphone (2)", server: 14.225.33.89, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti3.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Vinaphone (2) (1)", server: 14.225.33.89, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti3.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Vinaphone (3)", server: 14.225.33.38, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti5.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Vinaphone (3) (1)", server: 14.225.33.38, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti5.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Vinaphone (4)", server: 14.225.33.237, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti7.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Vinaphone (4) (1)", server: 14.225.33.237, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti7.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Vinaphone (5)", server: 14.225.33.139, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti9.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Vinaphone (5) (1)", server: 14.225.33.139, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti9.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Vinaphone (6)", server: 14.225.33.189, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti11.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Vinaphone (6) (1)", server: 14.225.33.189, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti11.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Vinaphone (7)", server: 14.225.33.142, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Vinaphone (7) (1)", server: 14.225.33.142, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (1)", server: 14.225.33.208, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti1.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (10)", server: 14.225.33.139, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti10.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (10) (1)", server: 14.225.33.139, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti10.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (11)", server: 14.225.33.189, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti11.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (11) (1)", server: 14.225.33.189, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti11.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (12)", server: 14.225.33.189, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti12.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (12) (1)", server: 14.225.33.189, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti12.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (13)", server: 14.225.33.142, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (13) (1)", server: 14.225.33.142, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (14)", server: 14.225.33.142, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (14) (1)", server: 14.225.33.142, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (15)", server: 202.55.135.128, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (15) (1)", server: 202.55.135.128, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (16)", server: 202.55.135.128, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (16) (1)", server: 202.55.135.128, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (17)", server: 103.176.110.249, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (17) (1)", server: 103.176.110.249, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (18)", server: 103.176.110.249, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (18) (1)", server: 103.176.110.249, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (19)", server: 202.55.134.235, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (19) (1)", server: 202.55.134.235, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti14.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (2)", server: 14.225.33.208, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti2.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (2) (1)", server: 14.225.33.208, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti2.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (20)", server: 202.55.134.235, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (20) (1)", server: 202.55.134.235, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti13.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (3)", server: 14.225.33.89, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti3.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (3) (1)", server: 14.225.33.89, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti3.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (4)", server: 14.225.33.89, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti4.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (4) (1)", server: 14.225.33.89, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti4.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (5)", server: 14.225.33.38, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti5.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (5) (1)", server: 14.225.33.38, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti5.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (6)", server: 14.225.33.38, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti6.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (6) (1)", server: 14.225.33.38, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti6.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (7)", server: 14.225.33.237, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti7.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (7) (1)", server: 14.225.33.237, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti7.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (8)", server: 14.225.33.237, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti8.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (8) (1)", server: 14.225.33.237, port: 443, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti8.zingfast.vn"}}
-  - {name: "🇻🇳 zingfast Việt Nam (9)", server: 14.225.33.139, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti9.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳 zingfast Việt Nam (9) (1)", server: 14.225.33.139, port: 80, type: vmess, uuid: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, password: f86df5fc-2ea0-447a-8d5d-5bb179e903ce, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti9.zingfast.vn", headers: {Host: dl.kgvn.garenanow.com}}}
-  - {name: "🇻🇳+ANTIDDOS+02+(HN)⚡", server: 14.225.33.169, port: 443, type: trojan, uuid: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, password: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
-  - {name: "🇻🇳+ANTIDDOS+04+(HCM)⚡", server: 14.225.245.25, port: 443, type: trojan, uuid: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, password: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
-  - {name: "🇻🇳+GAME+HCM+(LQ)⚡", server: gamehcm.vpn.fast4g.me, port: 443, type: trojan, uuid: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, password: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
-  - {name: "🇻🇳+GAME+HN+2+(LQ)⚡", server: gamehn2.vpn.fast4g.me, port: 443, type: trojan, uuid: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, password: 7e95c58a-5cb3-489e-94e2-11ddc9c9dd11, alterId: 0, cipher: tls, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: tcp}
+  - {name: "🇻🇳 server 80 [4] nền LQ", server: tz2.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳 server 80 [4] nền TIKTOK", server: tz2.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳 server 80 [4] nền mobiedu", server: tz2.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳 server 80 [5] nền LQ", server: tz4.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳 server 80 [5] nền TIKTOK", server: tz4.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳 server 80 [5] nền mobiedu", server: tz4.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳 server 80 [8] nền LQ", server: tz5.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳 server 80 [8] nền TIKTOK", server: tz5.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳 server 80 [8] nền mobiedu", server: tz5.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳 server 🔐[1] nền LQ", server: hntj1.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇻🇳 server 🔐[1] nền TIKTOK", server: hntj1.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇻🇳 server 🔐[1] nền mobiedu", server: hntj1.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇻🇳 server 🔐[4] nền LQ", server: hn2.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇻🇳 server 🔐[4] nền TIKTOK", server: hn2.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇻🇳 server 🔐[4] nền mobiedu", server: hn2.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇻🇳 server 🔐[5] nền LQ", server: hn4.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇻🇳 server 🔐[5] nền TIKTOK", server: hn4.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇻🇳 server 🔐[5] nền mobiedu", server: hn4.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇻🇳 server 🔐[8] nền LQ", server: hn5.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇻🇳 server 🔐[8] nền TIKTOK", server: hn5.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇻🇳 server 🔐[8] nền mobiedu", server: hn5.tnetz.pro, port: 443, type: trojan, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇻🇳 server80 [1] nền LQ", server: tz.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳 server80 [1] nền TIKTOK", server: tz.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳 server80 [1] nền mobiedu", server: tz.tnetz.pro, port: 80, type: vmess, uuid: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, password: b0f736cf-1b4c-4845-9d0d-a2958fbd0e8e, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/tnetz.pro", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳VIETTEL IDC", server: 171.244.61.118, port: 80, type: vmess, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/daily4gsieure.site", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳VN 1 HCM", server: 222.255.117.217, port: 80, type: vmess, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/daily4gsieure.site", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳VN 1 HCM Nền TIKTOK", server: 222.255.117.217, port: 80, type: vmess, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/daily4gsieure.site", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳VN 3 HCM", server: 14.225.205.247, port: 80, type: vmess, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/daily4gsieure.site", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳VN 4 Gaming", server: 103.75.187.153, port: 80, type: vmess, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/daily4gsieure.site", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳VN 4 HCM Gaming VIP", server: 14.225.205.247, port: 80, type: vmess, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/daily4gsieure.site", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳VN 5 Đà Nẵng", server: 103.75.184.169, port: 80, type: vmess, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/daily4gsieure.site", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳VN GAMING CHUYÊN PUBG 2", server: 103.57.220.48, port: 443, type: trojan, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com}
+  - {name: "🇻🇳VN HN 01", server: 103.57.220.59, port: 80, type: vmess, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/daily4gsieure.site", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳VN HN 03 NEW", server: 103.57.220.48, port: 80, type: vmess, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/daily4gsieure.site", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳VN Hanoi 04", server: 103.57.220.59, port: 80, type: vmess, uuid: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, password: 9670fb8c-7f2f-4ace-bdd5-a44ece910da1, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/daily4gsieure.site", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳tltvpn vn (5)⚡", server: 14.225.33.142, port: 80, type: vmess, uuid: 60695296-3027-4935-9f5a-758a2d939da6, password: 60695296-3027-4935-9f5a-758a2d939da6, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti1.tltvpn.com", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳tltvpn vn (5)⚡ (1)", server: 14.225.33.142, port: 80, type: vmess, uuid: e52f46c6-2e84-4359-b955-6f4b6620e469, password: e52f46c6-2e84-4359-b955-6f4b6620e469, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti1.tltvpn.com", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳tltvpn vn (5)⚡ (2)", server: 14.225.33.142, port: 80, type: vmess, uuid: 8fe451d2-6b8e-4d8d-8aa2-723f687299af, password: 8fe451d2-6b8e-4d8d-8aa2-723f687299af, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti1.tltvpn.com", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳tltvpn vn (5)⚡ (3)", server: 14.225.33.142, port: 80, type: vmess, uuid: a50f6ab1-c18d-48b8-aa7b-6a26066cd384, password: a50f6ab1-c18d-48b8-aa7b-6a26066cd384, alterId: 0, cipher: auto, tfo: true, udp: true, tls: false, network: ws, ws-opts: {path: "/anti1.tltvpn.com", headers: {Host: dl.kgvn.garenanow.com}}}
+  - {name: "🇻🇳tltvpn vn (6)⚡", server: 14.225.33.142, port: 443, type: vmess, uuid: 60695296-3027-4935-9f5a-758a2d939da6, password: 60695296-3027-4935-9f5a-758a2d939da6, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti2.tltvpn.com"}}
+  - {name: "🇻🇳tltvpn vn (6)⚡ (1)", server: 14.225.33.142, port: 443, type: vmess, uuid: e52f46c6-2e84-4359-b955-6f4b6620e469, password: e52f46c6-2e84-4359-b955-6f4b6620e469, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti2.tltvpn.com"}}
+  - {name: "🇻🇳tltvpn vn (6)⚡ (2)", server: 14.225.33.142, port: 443, type: vmess, uuid: 8fe451d2-6b8e-4d8d-8aa2-723f687299af, password: 8fe451d2-6b8e-4d8d-8aa2-723f687299af, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti2.tltvpn.com"}}
+  - {name: "🇻🇳tltvpn vn (6)⚡ (3)", server: 14.225.33.142, port: 443, type: vmess, uuid: a50f6ab1-c18d-48b8-aa7b-6a26066cd384, password: a50f6ab1-c18d-48b8-aa7b-6a26066cd384, alterId: 0, cipher: auto, tfo: true, udp: true, tls: true, skip-cert-verify: true, peer: dl.kgvn.garenanow.com, sni: dl.kgvn.garenanow.com, serverName: dl.kgvn.garenanow.com, network: grpc, grpc-opts: {grpc-service-name: "anti2.tltvpn.com"}}
 proxy-groups:
-  - { name: 2023-05-02-04-12-24, type: url-test, proxies: ["5G bất tử 1", "5G bất tử 2", "File 10", "Germany 1 - Garena", "Germany 1 - Garena (1)", "Germany 1 - Tiktok", "Germany 1 - Tiktok (1)", "Hà Nội LQ 🇻🇳", "Hà Nội Tiktok 🇻🇳", "Mobifone 🇻🇳", "Singapore 2 - Garena", "Singapore 2 - Garena (1)", "Singapore 2 - Tiktok", "Singapore 2 - Tiktok (1)", "TTH-VN", "VIETTEL🇻🇳LQ Bến Tre 2 Free", "VIETTEL🇻🇳LQ Bến Tre 4 Free", "VIETTEL🇻🇳TLS 2 LQ Free", "VIETTEL🇻🇳TLS 4 LQ Free", "VIETTEL🇻🇳Tiktok Bến Tre 2 Free", "VIETTEL🇻🇳Tiktok Bến Tre 4 Free", "Việt Nam 1 - Garena", "Việt Nam 1 - Garena (1)", "Việt Nam 1 - Tiktok", "Việt Nam 1 - Tiktok (1)", "Việt Nam 2 - Garena", "Việt Nam 2 - Garena (1)", "Việt Nam 2 - Tiktok", "Việt Nam 2 - Tiktok (1)", "Việt Nam LQ 🇻🇳", "Việt Nam Pro 🇻🇳", "sg-lb.vhax.net", "sg-lb.vhax.net (1)", "vipprook", "∞G Ultimate 1 ( t.me/v2ray_share_file )", "∞G Ultimate 1 ( t.me/v2ray_share_file ) (1)", "∞G Ultimate 2 ( t.me/v2ray_share_file )", "∞G Ultimate 2 ( t.me/v2ray_share_file ) (1)", "🇯🇵 Public JP 1", "🇯🇵 Public JP 2", "🇸🇬 Public SG 1", "🇸🇬 Public SG 2", "🇸🇬 zingfast Singapore (1)", "🇸🇬 zingfast Singapore (1) (1)", "🇸🇬 zingfast Singapore (10)", "🇸🇬 zingfast Singapore (10) (1)", "🇸🇬 zingfast Singapore (11)", "🇸🇬 zingfast Singapore (11) (1)", "🇸🇬 zingfast Singapore (12)", "🇸🇬 zingfast Singapore (12) (1)", "🇸🇬 zingfast Singapore (2)", "🇸🇬 zingfast Singapore (2) (1)", "🇸🇬 zingfast Singapore (3)", "🇸🇬 zingfast Singapore (3) (1)", "🇸🇬 zingfast Singapore (4)", "🇸🇬 zingfast Singapore (4) (1)", "🇸🇬 zingfast Singapore (5)", "🇸🇬 zingfast Singapore (5) (1)", "🇸🇬 zingfast Singapore (6)", "🇸🇬 zingfast Singapore (6) (1)", "🇸🇬 zingfast Singapore (7)", "🇸🇬 zingfast Singapore (7) (1)", "🇸🇬 zingfast Singapore (8)", "🇸🇬 zingfast Singapore (8) (1)", "🇸🇬 zingfast Singapore (9)", "🇸🇬 zingfast Singapore (9) (1)", "🇺🇸 Public US 01", "🇺🇸 Public US 02", "🇻🇳  zingfast Vinaphone (1)", "🇻🇳  zingfast Vinaphone (1) (1)", "🇻🇳 ANTIDDOS 01 (HN)⚡", "🇻🇳 ANTIDDOS 03 (HCM)⚡", "🇻🇳 LQ-1 (t.me/share_v2ray_file)", "🇻🇳 LQ-2 (t.me/share_v2ray_file)", "🇻🇳 LQ-3 (t.me/share_v2ray_file)", "🇻🇳 LQ-4 (t.me/share_v2ray_file)", "🇻🇳 LQ-5 (t.me/share_v2ray_file)", "🇻🇳 Spot HCM", "🇻🇳 Spot HN", "🇻🇳 Tiktok-1 (t.me/share_v2ray_file)", "🇻🇳 Tiktok-2 (t.me/share_v2ray_file)", "🇻🇳 Tiktok-3 (t.me/share_v2ray_file)", "🇻🇳 Tiktok-4 (t.me/share_v2ray_file)", "🇻🇳 Tiktok-5 (t.me/share_v2ray_file)", "🇻🇳 zingfast Antiddos (13)", "🇻🇳 zingfast Antiddos (14)", "🇻🇳 zingfast Mobifone (1)", "🇻🇳 zingfast Mobifone (1) (1)", "🇻🇳 zingfast Mobifone (2)", "🇻🇳 zingfast Mobifone (2) (1)", "🇻🇳 zingfast Mobifone (3)", "🇻🇳 zingfast Mobifone (3) (1)", "🇻🇳 zingfast Mobifone (4)", "🇻🇳 zingfast Mobifone (4) (1)", "🇻🇳 zingfast Mobifone (5)", "🇻🇳 zingfast Mobifone (5) (1)", "🇻🇳 zingfast Mobifone (6)", "🇻🇳 zingfast Mobifone (6) (1)", "🇻🇳 zingfast Mobifone (7)", "🇻🇳 zingfast Vinaphone (2)", "🇻🇳 zingfast Vinaphone (2) (1)", "🇻🇳 zingfast Vinaphone (3)", "🇻🇳 zingfast Vinaphone (3) (1)", "🇻🇳 zingfast Vinaphone (4)", "🇻🇳 zingfast Vinaphone (4) (1)", "🇻🇳 zingfast Vinaphone (5)", "🇻🇳 zingfast Vinaphone (5) (1)", "🇻🇳 zingfast Vinaphone (6)", "🇻🇳 zingfast Vinaphone (6) (1)", "🇻🇳 zingfast Vinaphone (7)", "🇻🇳 zingfast Vinaphone (7) (1)", "🇻🇳 zingfast Việt Nam (1)", "🇻🇳 zingfast Việt Nam (10)", "🇻🇳 zingfast Việt Nam (10) (1)", "🇻🇳 zingfast Việt Nam (11)", "🇻🇳 zingfast Việt Nam (11) (1)", "🇻🇳 zingfast Việt Nam (12)", "🇻🇳 zingfast Việt Nam (12) (1)", "🇻🇳 zingfast Việt Nam (13)", "🇻🇳 zingfast Việt Nam (13) (1)", "🇻🇳 zingfast Việt Nam (14)", "🇻🇳 zingfast Việt Nam (14) (1)", "🇻🇳 zingfast Việt Nam (15)", "🇻🇳 zingfast Việt Nam (15) (1)", "🇻🇳 zingfast Việt Nam (16)", "🇻🇳 zingfast Việt Nam (16) (1)", "🇻🇳 zingfast Việt Nam (17)", "🇻🇳 zingfast Việt Nam (17) (1)", "🇻🇳 zingfast Việt Nam (18)", "🇻🇳 zingfast Việt Nam (18) (1)", "🇻🇳 zingfast Việt Nam (19)", "🇻🇳 zingfast Việt Nam (19) (1)", "🇻🇳 zingfast Việt Nam (2)", "🇻🇳 zingfast Việt Nam (2) (1)", "🇻🇳 zingfast Việt Nam (20)", "🇻🇳 zingfast Việt Nam (20) (1)", "🇻🇳 zingfast Việt Nam (3)", "🇻🇳 zingfast Việt Nam (3) (1)", "🇻🇳 zingfast Việt Nam (4)", "🇻🇳 zingfast Việt Nam (4) (1)", "🇻🇳 zingfast Việt Nam (5)", "🇻🇳 zingfast Việt Nam (5) (1)", "🇻🇳 zingfast Việt Nam (6)", "🇻🇳 zingfast Việt Nam (6) (1)", "🇻🇳 zingfast Việt Nam (7)", "🇻🇳 zingfast Việt Nam (7) (1)", "🇻🇳 zingfast Việt Nam (8)", "🇻🇳 zingfast Việt Nam (8) (1)", "🇻🇳 zingfast Việt Nam (9)", "🇻🇳 zingfast Việt Nam (9) (1)", "🇻🇳+ANTIDDOS+02+(HN)⚡", "🇻🇳+ANTIDDOS+04+(HCM)⚡", "🇻🇳+GAME+HCM+(LQ)⚡", "🇻🇳+GAME+HN+2+(LQ)⚡"], url: "http://www.gstatic.com/generate_204", interval: 30 }
+  - { name: 2023-05-02-04-52-46, type: url-test, proxies: ["CLOUD IDC (GARENA)", "CLOUD IDC (GARENA) (TLS)", "Germany 1 - Garena", "Germany 1 - Garena (1)", "Germany 1 - Tiktok", "Germany 1 - Tiktok (1)", "Hà Nội LQ 🇻🇳", "Hà Nội Tiktok 🇻🇳", "Mobifone 🇻🇳", "Singapore 2", "Singapore 2 (TLS)", "Singapore 2 - Garena", "Singapore 2 - Garena (1)", "Singapore 2 - Tiktok", "Singapore 2 - Tiktok (1)", "VIETTEL🇻🇳LQ Bến Tre 2 Free", "VIETTEL🇻🇳LQ Bến Tre 4 Free", "VIETTEL🇻🇳TLS 2 LQ Free", "VIETTEL🇻🇳TLS 4 LQ Free", "VIETTEL🇻🇳Tiktok Bến Tre 2 Free", "VIETTEL🇻🇳Tiktok Bến Tre 4 Free", "Việt Nam 1 - Garena", "Việt Nam 1 - Garena (1)", "Việt Nam 1 - Tiktok", "Việt Nam 1 - Tiktok (1)", "Việt Nam 2 - Garena", "Việt Nam 2 - Garena (1)", "Việt Nam 2 - Tiktok", "Việt Nam 2 - Tiktok (1)", "Việt Nam LQ 🇻🇳", "Việt Nam Pro 🇻🇳", "∞G Ultimate 1 ( t.me/v2ray_share_file )", "∞G Ultimate 1 ( t.me/v2ray_share_file ) (1)", "∞G Ultimate 2 ( t.me/v2ray_share_file )", "∞G Ultimate 2 ( t.me/v2ray_share_file ) (1)", "🇭🇰 HONGKONG 01", "🇭🇰tltvpn hk (1)⚡", "🇭🇰tltvpn hk (1)⚡ (1)", "🇭🇰tltvpn hk (1)⚡ (2)", "🇭🇰tltvpn hk (1)⚡ (3)", "🇭🇰tltvpn hk (2)⚡", "🇭🇰tltvpn hk (2)⚡ (1)", "🇭🇰tltvpn hk (2)⚡ (2)", "🇭🇰tltvpn hk (2)⚡ (3)", "🇯🇵 Public JP 1", "🇯🇵 Public JP 2", "🇯🇵 server 80 [7] nền LQ", "🇯🇵 server 80 [7] nền TIKTOK", "🇯🇵 server 80 [7] nền mobiedu", "🇯🇵 server 🔐[7] nền LQ", "🇯🇵 server 🔐[7] nền TIKTOK", "🇯🇵 server 🔐[7] nền mobiedu", "🇯🇵tltvpn nhật (4) 🎮", "🇯🇵tltvpn nhật (4) 🎮 (1)", "🇯🇵tltvpn nhật (4) 🎮 (2)", "🇯🇵tltvpn nhật (4) 🎮 (3)", "🇸🇬 Public SG 1", "🇸🇬 Public SG 2", "🇸🇬 server  🔐 [3] nền LQ", "🇸🇬 server  🔐 [3] nền TIKTOK", "🇸🇬 server  🔐 [3] nền mobiedu", "🇸🇬 server 80 [2] nền LQ", "🇸🇬 server 80 [2] nền TIKTOK", "🇸🇬 server 80 [2] nền mobiedu", "🇸🇬 server 80 [3] nền LQ", "🇸🇬 server 80 [3] nền TIKTOK", "🇸🇬 server 80 [3] nền mobiedu", "🇸🇬 server 🔐[2] nền LQ", "🇸🇬 server 🔐[2] nền TIKTOK", "🇸🇬 server 🔐[2] nền mobiedu", "🇸🇬Singapore 02", "🇸🇬Singapore VIP", "🇸🇬Singapore VIP TLS", "🇸🇬tltvpn Sing (2)⚡", "🇸🇬tltvpn Sing (2)⚡ (1)", "🇸🇬tltvpn Sing (2)⚡ (2)", "🇸🇬tltvpn Sing (2)⚡ (3)", "🇸🇬tltvpn Sing (4) 🎮", "🇸🇬tltvpn Sing (4) 🎮 (1)", "🇸🇬tltvpn Sing (4) 🎮 (2)", "🇸🇬tltvpn Sing (4) 🎮 (3)", "🇺🇸 Public US 01", "🇺🇸 Public US 02", "🇺🇸 server 80 [6] nền LQ", "🇺🇸 server 80 [6] nền TIKTOK", "🇺🇸 server 80 [6] nền mobiedu", "🇺🇸 server 🔐[6] nền LQ", "🇺🇸 server 🔐[6] nền TIKTOK", "🇺🇸 server 🔐[6] nền mobiedu", "🇻🇳 LQ-1 (t.me/share_v2ray_file)", "🇻🇳 LQ-2 (t.me/share_v2ray_file)", "🇻🇳 LQ-3 (t.me/share_v2ray_file)", "🇻🇳 LQ-4 (t.me/share_v2ray_file)", "🇻🇳 LQ-5 (t.me/share_v2ray_file)", "🇻🇳 Spot HCM", "🇻🇳 Spot HN", "🇻🇳 Tiktok-1 (t.me/share_v2ray_file)", "🇻🇳 Tiktok-2 (t.me/share_v2ray_file)", "🇻🇳 Tiktok-3 (t.me/share_v2ray_file)", "🇻🇳 Tiktok-4 (t.me/share_v2ray_file)", "🇻🇳 Tiktok-5 (t.me/share_v2ray_file)", "🇻🇳 server 80 [4] nền LQ", "🇻🇳 server 80 [4] nền TIKTOK", "🇻🇳 server 80 [4] nền mobiedu", "🇻🇳 server 80 [5] nền LQ", "🇻🇳 server 80 [5] nền TIKTOK", "🇻🇳 server 80 [5] nền mobiedu", "🇻🇳 server 80 [8] nền LQ", "🇻🇳 server 80 [8] nền TIKTOK", "🇻🇳 server 80 [8] nền mobiedu", "🇻🇳 server 🔐[1] nền LQ", "🇻🇳 server 🔐[1] nền TIKTOK", "🇻🇳 server 🔐[1] nền mobiedu", "🇻🇳 server 🔐[4] nền LQ", "🇻🇳 server 🔐[4] nền TIKTOK", "🇻🇳 server 🔐[4] nền mobiedu", "🇻🇳 server 🔐[5] nền LQ", "🇻🇳 server 🔐[5] nền TIKTOK", "🇻🇳 server 🔐[5] nền mobiedu", "🇻🇳 server 🔐[8] nền LQ", "🇻🇳 server 🔐[8] nền TIKTOK", "🇻🇳 server 🔐[8] nền mobiedu", "🇻🇳 server80 [1] nền LQ", "🇻🇳 server80 [1] nền TIKTOK", "🇻🇳 server80 [1] nền mobiedu", "🇻🇳VIETTEL IDC", "🇻🇳VN 1 HCM", "🇻🇳VN 1 HCM Nền TIKTOK", "🇻🇳VN 3 HCM", "🇻🇳VN 4 Gaming", "🇻🇳VN 4 HCM Gaming VIP", "🇻🇳VN 5 Đà Nẵng", "🇻🇳VN GAMING CHUYÊN PUBG 2", "🇻🇳VN HN 01", "🇻🇳VN HN 03 NEW", "🇻🇳VN Hanoi 04", "🇻🇳tltvpn vn (5)⚡", "🇻🇳tltvpn vn (5)⚡ (1)", "🇻🇳tltvpn vn (5)⚡ (2)", "🇻🇳tltvpn vn (5)⚡ (3)", "🇻🇳tltvpn vn (6)⚡", "🇻🇳tltvpn vn (6)⚡ (1)", "🇻🇳tltvpn vn (6)⚡ (2)", "🇻🇳tltvpn vn (6)⚡ (3)"], url: "http://www.gstatic.com/generate_204", interval: 30 }
 rules:
   - 'DOMAIN-KEYWORD,adjust,REJECT'
   - 'DOMAIN-KEYWORD,admarvel,REJECT'
@@ -224,6 +214,7 @@ rules:
   - 'DOMAIN-KEYWORD,vclick,REJECT'
   - 'DOMAIN-SUFFIX,24h-ad.24hstatic.com,REJECT'
   - 'DOMAIN-SUFFIX,24h-ipad-ad.24hstatic.com,REJECT'
+  - 'DOMAIN-SUFFIX,aanetwork.vn,REJECT'
   - 'DOMAIN-SUFFIX,ad-us.24hstatic.com,REJECT'
   - 'DOMAIN-SUFFIX,ad.accesstrade.vn,REJECT'
   - 'DOMAIN-SUFFIX,ad.org.vn,REJECT'
@@ -351,7 +342,6 @@ rules:
   - 'DOMAIN-SUFFIX,hotngay.vn,REJECT'
   - 'DOMAIN-SUFFIX,itim.vn,REJECT'
   - 'DOMAIN-SUFFIX,jeoway.com,REJECT'
-  - 'DOMAIN-SUFFIX,jp.zaloapp.com,REJECT'
   - 'DOMAIN-SUFFIX,js.aiservice.vn,REJECT'
   - 'DOMAIN-SUFFIX,jslog.zapps.vn,REJECT'
   - 'DOMAIN-SUFFIX,kabbmedia.com,REJECT'
@@ -455,7 +445,6 @@ rules:
   - 'DOMAIN-SUFFIX,rec.aiservice.vn,REJECT'
   - 'DOMAIN-SUFFIX,s.tuoitre.vn,REJECT'
   - 'DOMAIN-SUFFIX,sbbanner-com.cdn.ampproject.org,REJECT'
-  - 'DOMAIN-SUFFIX,sbz.vn,REJECT'
   - 'DOMAIN-SUFFIX,sdk.zadn.vn,REJECT'
   - 'DOMAIN-SUFFIX,service-api.accesstrade.vn,REJECT'
   - 'DOMAIN-SUFFIX,serving-system.com,REJECT'
@@ -492,6 +481,7 @@ rules:
   - 'DOMAIN-SUFFIX,tjme.io,REJECT'
   - 'DOMAIN-SUFFIX,tpmedia.online,REJECT'
   - 'DOMAIN-SUFFIX,track.accesstrade.vn,REJECT'
+  - 'DOMAIN-SUFFIX,track.vtcnews.vn,REJECT'
   - 'DOMAIN-SUFFIX,tracker-mw-zlivestream.zapps.vn,REJECT'
   - 'DOMAIN-SUFFIX,tracker-zlivestream.zapps.vn,REJECT'
   - 'DOMAIN-SUFFIX,tracking-amp.vnexpress.net,REJECT'
@@ -545,7 +535,6 @@ rules:
   - 'DOMAIN-SUFFIX,zminer.zaloapp.com,REJECT'
   - 'DOMAIN-SUFFIX,zplayer-trk.zdn.vn,REJECT'
   - 'DOMAIN-SUFFIX,zplayer.trk.zapps.vn,REJECT'
-  - 'DOMAIN-SUFFIX,zpsocial-f52-org.zadn.vn,REJECT'
   - 'DOMAIN-SUFFIX,zt.me.zing.vn,REJECT'
   - 'DOMAIN-SUFFIX,zt1.me.zing.vn,REJECT'
   - 'DOMAIN-SUFFIX,ztevents.zaloapp.com,REJECT'
@@ -1020,6 +1009,7 @@ rules:
   - 'DOMAIN-SUFFIX,trackingapi.foody.vn,REJECT'
   - 'DOMAIN-SUFFIX,trackingvn.zingplay.com,REJECT'
   - 'DOMAIN-SUFFIX,trackity.tiki.vn,REJECT'
+  - 'DOMAIN-SUFFIX,traffic.vietnhan.co,REJECT'
   - 'DOMAIN-SUFFIX,trenddigital.vn,REJECT'
   - 'DOMAIN-SUFFIX,trk.123c.vn,REJECT'
   - 'DOMAIN-SUFFIX,trk.staging.123c.vn,REJECT'
@@ -1248,6 +1238,7 @@ rules:
   - 'DOMAIN-SUFFIX,ads.play.cbsi.video,REJECT'
   - 'DOMAIN-SUFFIX,ads.playground.xyz,REJECT'
   - 'DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com,REJECT'
+  - 'DOMAIN-SUFFIX,ads.realmemobile.com,REJECT'
   - 'DOMAIN-SUFFIX,ads.samba.tv,REJECT'
   - 'DOMAIN-SUFFIX,ads.snapchat.com,REJECT'
   - 'DOMAIN-SUFFIX,ads.thesun.co.uk,REJECT'
@@ -1393,6 +1384,8 @@ rules:
   - 'DOMAIN-SUFFIX,analy.qq.com,REJECT'
   - 'DOMAIN-SUFFIX,analysis.fi,REJECT'
   - 'DOMAIN-SUFFIX,analytics-ad-*.kgslb.com,REJECT'
+  - 'DOMAIN-SUFFIX,analytics-alv.google.com,REJECT'
+  - 'DOMAIN-SUFFIX,analytics-prod-gcp.ff.avast.com,REJECT'
   - 'DOMAIN-SUFFIX,analytics-sg.tiktok.com,REJECT'
   - 'DOMAIN-SUFFIX,analytics.365scores.com,REJECT'
   - 'DOMAIN-SUFFIX,analytics.autodesk.com,REJECT'
@@ -1694,6 +1687,7 @@ rules:
   - 'DOMAIN-SUFFIX,company-target.com,REJECT'
   - 'DOMAIN-SUFFIX,conductrics.com,REJECT'
   - 'DOMAIN-SUFFIX,confiant-integrations.global.ssl.fastly.net,REJECT'
+  - 'DOMAIN-SUFFIX,confiant-integrations.net,REJECT'
   - 'DOMAIN-SUFFIX,config.hiido.com,REJECT'
   - 'DOMAIN-SUFFIX,connatix.com,REJECT'
   - 'DOMAIN-SUFFIX,connect.idocdn.com,REJECT'
@@ -1779,6 +1773,7 @@ rules:
   - 'DOMAIN-SUFFIX,dlog.hiido.com,REJECT'
   - 'DOMAIN-SUFFIX,dlswbr.baidu.com,REJECT'
   - 'DOMAIN-SUFFIX,dm-event.net,REJECT'
+  - 'DOMAIN-SUFFIX,dmpxs.com,REJECT'
   - 'DOMAIN-SUFFIX,dmzjmp.com,REJECT'
   - 'DOMAIN-SUFFIX,domnovrek.com,REJECT'
   - 'DOMAIN-SUFFIX,doppler-reporting.cbsivideo.com,REJECT'
@@ -2086,6 +2081,7 @@ rules:
   - 'DOMAIN-SUFFIX,lifestreet.com,REJECT'
   - 'DOMAIN-SUFFIX,lifestreetmedia.com,REJECT'
   - 'DOMAIN-SUFFIX,lift.acquia.com,REJECT'
+  - 'DOMAIN-SUFFIX,liftoff-creatives.io,REJECT'
   - 'DOMAIN-SUFFIX,liftoff.io,REJECT'
   - 'DOMAIN-SUFFIX,ligatus.com,REJECT'
   - 'DOMAIN-SUFFIX,lijit.com,REJECT'
@@ -2117,6 +2113,7 @@ rules:
   - 'DOMAIN-SUFFIX,logsdk.qq.com,REJECT'
   - 'DOMAIN-SUFFIX,logservice-dra.platform.hicloud.com,REJECT'
   - 'DOMAIN-SUFFIX,logservice.hicloud.com,REJECT'
+  - 'DOMAIN-SUFFIX,logservice1.hicloud.com,REJECT'
   - 'DOMAIN-SUFFIX,logsss.com,REJECT'
   - 'DOMAIN-SUFFIX,logssug.ucweb.com,REJECT'
   - 'DOMAIN-SUFFIX,logupdate.avlyun.sec.miui.com,REJECT'
@@ -2583,6 +2580,7 @@ rules:
   - 'DOMAIN-SUFFIX,static.dynamicyield.com,REJECT'
   - 'DOMAIN-SUFFIX,staticstuff.net,REJECT'
   - 'DOMAIN-SUFFIX,stats.adobe.com,REJECT'
+  - 'DOMAIN-SUFFIX,stats.avast.com,REJECT'
   - 'DOMAIN-SUFFIX,stats.paypal.com,REJECT'
   - 'DOMAIN-SUFFIX,stats.unity3d.com,REJECT'
   - 'DOMAIN-SUFFIX,statserv.net,REJECT'
@@ -2852,6 +2850,7 @@ rules:
   - 'DOMAIN-SUFFIX,0redire.com,REJECT'
   - 'DOMAIN-SUFFIX,0x01n2ptpuz3.com,REJECT'
   - 'DOMAIN-SUFFIX,1-1ads.com,REJECT'
+  - 'DOMAIN-SUFFIX,14i8trbbx4.com,REJECT'
   - 'DOMAIN-SUFFIX,152media.info,REJECT'
   - 'DOMAIN-SUFFIX,15cacaospice63nhdk.com,REJECT'
   - 'DOMAIN-SUFFIX,1frozenthrone1.com,REJECT'
@@ -3852,6 +3851,7 @@ rules:
   - 'DOMAIN-SUFFIX,anahtars.com,REJECT'
   - 'DOMAIN-SUFFIX,analysis.polarisoffice.com,REJECT'
   - 'DOMAIN-SUFFIX,analytic.rollout.io,REJECT'
+  - 'DOMAIN-SUFFIX,analytics-api.samsunghealthcn.com,REJECT'
   - 'DOMAIN-SUFFIX,analytics-au.clickdimensions.com,REJECT'
   - 'DOMAIN-SUFFIX,analytics-ca.clickdimensions.com,REJECT'
   - 'DOMAIN-SUFFIX,analytics-eu.clickdimensions.com,REJECT'
@@ -3974,7 +3974,6 @@ rules:
   - 'DOMAIN-SUFFIX,appads.com,REJECT'
   - 'DOMAIN-SUFFIX,appbetnewapp.top,REJECT'
   - 'DOMAIN-SUFFIX,appboy-images.com,REJECT'
-  - 'DOMAIN-SUFFIX,appcdn01.xyz,REJECT'
   - 'DOMAIN-SUFFIX,appclick.co,REJECT'
   - 'DOMAIN-SUFFIX,appclick.net,REJECT'
   - 'DOMAIN-SUFFIX,appdog.com,REJECT'
@@ -4125,6 +4124,7 @@ rules:
   - 'DOMAIN-SUFFIX,balloontexture.com,REJECT'
   - 'DOMAIN-SUFFIX,balor-ghn.com,REJECT'
   - 'DOMAIN-SUFFIX,bambluagamgona.com,REJECT'
+  - 'DOMAIN-SUFFIX,bande2az.com,REJECT'
   - 'DOMAIN-SUFFIX,bango.net,REJECT'
   - 'DOMAIN-SUFFIX,banik.redigy.cz,REJECT'
   - 'DOMAIN-SUFFIX,banner-exchange-24.de,REJECT'
@@ -4397,6 +4397,7 @@ rules:
   - 'DOMAIN-SUFFIX,brickandmobile.com,REJECT'
   - 'DOMAIN-SUFFIX,bridgetrack.com,REJECT'
   - 'DOMAIN-SUFFIX,brightinfo.com,REJECT'
+  - 'DOMAIN-SUFFIX,brightonclick.com,REJECT'
   - 'DOMAIN-SUFFIX,brije-cor.info,REJECT'
   - 'DOMAIN-SUFFIX,britepool.com,REJECT'
   - 'DOMAIN-SUFFIX,british-banners.com,REJECT'
@@ -4406,6 +4407,7 @@ rules:
   - 'DOMAIN-SUFFIX,broaddoor.com,REJECT'
   - 'DOMAIN-SUFFIX,browser-update.org,REJECT'
   - 'DOMAIN-SUFFIX,brynh-lei.com,REJECT'
+  - 'DOMAIN-SUFFIX,bskhdiylrnxdp.com,REJECT'
   - 'DOMAIN-SUFFIX,bszmpfaj.com,REJECT'
   - 'DOMAIN-SUFFIX,btcadtop.com,REJECT'
   - 'DOMAIN-SUFFIX,btez8.xyz,REJECT'
@@ -4928,6 +4930,7 @@ rules:
   - 'DOMAIN-SUFFIX,dealdotcom.com,REJECT'
   - 'DOMAIN-SUFFIX,dealtsowbite.com,REJECT'
   - 'DOMAIN-SUFFIX,deanmediagroup.com,REJECT'
+  - 'DOMAIN-SUFFIX,death2americaallahuakbar.com,REJECT'
   - 'DOMAIN-SUFFIX,debadu.com,REJECT'
   - 'DOMAIN-SUFFIX,debonairway.com,REJECT'
   - 'DOMAIN-SUFFIX,debtbusterloans.com,REJECT'
@@ -5324,6 +5327,7 @@ rules:
   - 'DOMAIN-SUFFIX,feed-xml.com,REJECT'
   - 'DOMAIN-SUFFIX,feedbackresearch.com,REJECT'
   - 'DOMAIN-SUFFIX,feedjit.com,REJECT'
+  - 'DOMAIN-SUFFIX,feedyourheadmag.com,REJECT'
   - 'DOMAIN-SUFFIX,felonlosel.com,REJECT'
   - 'DOMAIN-SUFFIX,fer2oxheou4nd.com,REJECT'
   - 'DOMAIN-SUFFIX,ferulaecharger.com,REJECT'
@@ -5410,6 +5414,7 @@ rules:
   - 'DOMAIN-SUFFIX,frightenedpotato.com,REJECT'
   - 'DOMAIN-SUFFIX,front.optimonk.com,REJECT'
   - 'DOMAIN-SUFFIX,fryawlauk.com,REJECT'
+  - 'DOMAIN-SUFFIX,fscfbfrof.com,REJECT'
   - 'DOMAIN-SUFFIX,ftte.xyz,REJECT'
   - 'DOMAIN-SUFFIX,fuffscreigh.website,REJECT'
   - 'DOMAIN-SUFFIX,fullstory.com,REJECT'
@@ -5501,6 +5506,7 @@ rules:
   - 'DOMAIN-SUFFIX,glixaing.com,REJECT'
   - 'DOMAIN-SUFFIX,glizauvo.net,REJECT'
   - 'DOMAIN-SUFFIX,gloalrie.com,REJECT'
+  - 'DOMAIN-SUFFIX,gloaphoo.net,REJECT'
   - 'DOMAIN-SUFFIX,globalismedia.com,REJECT'
   - 'DOMAIN-SUFFIX,globaltakeoff.net,REJECT'
   - 'DOMAIN-SUFFIX,globaltrack.com,REJECT'
@@ -5602,6 +5608,7 @@ rules:
   - 'DOMAIN-SUFFIX,hadabqhbewcrt.com,REJECT'
   - 'DOMAIN-SUFFIX,hadarone.com,REJECT'
   - 'DOMAIN-SUFFIX,hadesleta.com,REJECT'
+  - 'DOMAIN-SUFFIX,hailstonefatherinlawsuggestions.com,REJECT'
   - 'DOMAIN-SUFFIX,hairdosslitter.casa,REJECT'
   - 'DOMAIN-SUFFIX,hairtease.com,REJECT'
   - 'DOMAIN-SUFFIX,hammerhearing.com,REJECT'
@@ -5698,6 +5705,7 @@ rules:
   - 'DOMAIN-SUFFIX,honeycshfferufrew.com,REJECT'
   - 'DOMAIN-SUFFIX,honeygoldfish.com,REJECT'
   - 'DOMAIN-SUFFIX,hookawep.net,REJECT'
+  - 'DOMAIN-SUFFIX,hoosgowhandbow.com,REJECT'
   - 'DOMAIN-SUFFIX,hoowooze.net,REJECT'
   - 'DOMAIN-SUFFIX,hostedads.realitykings.com,REJECT'
   - 'DOMAIN-SUFFIX,hostg.xyz,REJECT'
@@ -5735,6 +5743,7 @@ rules:
   - 'DOMAIN-SUFFIX,hybrid.ai,REJECT'
   - 'DOMAIN-SUFFIX,hydra.alibaba.com,REJECT'
   - 'DOMAIN-SUFFIX,hydramedia.com,REJECT'
+  - 'DOMAIN-SUFFIX,hylicfrothi.uno,REJECT'
   - 'DOMAIN-SUFFIX,hynteroforion.com,REJECT'
   - 'DOMAIN-SUFFIX,hyperbanner.net,REJECT'
   - 'DOMAIN-SUFFIX,hypermusk.com,REJECT'
@@ -5802,6 +5811,7 @@ rules:
   - 'DOMAIN-SUFFIX,imagecash.net,REJECT'
   - 'DOMAIN-SUFFIX,images-pw.secureserver.net,REJECT'
   - 'DOMAIN-SUFFIX,images.footballaddicts.se,REJECT'
+  - 'DOMAIN-SUFFIX,imageshh.com,REJECT'
   - 'DOMAIN-SUFFIX,imarketservices.com,REJECT'
   - 'DOMAIN-SUFFIX,imatmobile.com,REJECT'
   - 'DOMAIN-SUFFIX,img.en25.com,REJECT'
@@ -5810,6 +5820,7 @@ rules:
   - 'DOMAIN-SUFFIX,imgpromo.easyrencontre.com,REJECT'
   - 'DOMAIN-SUFFIX,imimobile.com,REJECT'
   - 'DOMAIN-SUFFIX,immensehoney.com,REJECT'
+  - 'DOMAIN-SUFFIX,immoxdzdke.com,REJECT'
   - 'DOMAIN-SUFFIX,imp.pvnsolutions.com,REJECT'
   - 'DOMAIN-SUFFIX,impact-ad.jp,REJECT'
   - 'DOMAIN-SUFFIX,impactmobile.com,REJECT'
@@ -6101,6 +6112,7 @@ rules:
   - 'DOMAIN-SUFFIX,leeethical.com,REJECT'
   - 'DOMAIN-SUFFIX,leethalo.net,REJECT'
   - 'DOMAIN-SUFFIX,legolas-media.com,REJECT'
+  - 'DOMAIN-SUFFIX,lehvxwciysoac.com,REJECT'
   - 'DOMAIN-SUFFIX,leiki.com,REJECT'
   - 'DOMAIN-SUFFIX,leisengr.com,REJECT'
   - 'DOMAIN-SUFFIX,lem-computers.net,REJECT'
@@ -6213,6 +6225,7 @@ rules:
   - 'DOMAIN-SUFFIX,lowseelan.com,REJECT'
   - 'DOMAIN-SUFFIX,lowtyroguer.com,REJECT'
   - 'DOMAIN-SUFFIX,lp3tdqle.com,REJECT'
+  - 'DOMAIN-SUFFIX,lpnjcnigcfuk.com,REJECT'
   - 'DOMAIN-SUFFIX,lptag.liveperson.net,REJECT'
   - 'DOMAIN-SUFFIX,lucidmedia.com,REJECT'
   - 'DOMAIN-SUFFIX,lucklayed.info,REJECT'
@@ -6296,6 +6309,8 @@ rules:
   - 'DOMAIN-SUFFIX,mbiifzdvhexj.com,REJECT'
   - 'DOMAIN-SUFFIX,mbs.megaroticlive.com,REJECT'
   - 'DOMAIN-SUFFIX,mc7clurd09pla4nrtat7ion.com,REJECT'
+  - 'DOMAIN-SUFFIX,mcppsh.com,REJECT'
+  - 'DOMAIN-SUFFIX,mcpuwpsh.com,REJECT'
   - 'DOMAIN-SUFFIX,mcpuwpush.com,REJECT'
   - 'DOMAIN-SUFFIX,mcyvayyde.com,REJECT'
   - 'DOMAIN-SUFFIX,mdotm.com,REJECT'
@@ -6407,6 +6422,7 @@ rules:
   - 'DOMAIN-SUFFIX,mkzqqhaakt.com,REJECT'
   - 'DOMAIN-SUFFIX,mlm.de,REJECT'
   - 'DOMAIN-SUFFIX,mlog.appguard.co.kr,REJECT'
+  - 'DOMAIN-SUFFIX,mlvgxzenoiz.com,REJECT'
   - 'DOMAIN-SUFFIX,mmaglobal.com,REJECT'
   - 'DOMAIN-SUFFIX,mmccint.com,REJECT'
   - 'DOMAIN-SUFFIX,mmedia.com,REJECT'
@@ -6583,6 +6599,13 @@ rules:
   - 'DOMAIN-SUFFIX,newnudecash.com,REJECT'
   - 'DOMAIN-SUFFIX,newonads.com,REJECT'
   - 'DOMAIN-SUFFIX,newopenx.detik.com,REJECT'
+  - 'DOMAIN-SUFFIX,news-central.io,REJECT'
+  - 'DOMAIN-SUFFIX,news-central.org,REJECT'
+  - 'DOMAIN-SUFFIX,news-headlines.co,REJECT'
+  - 'DOMAIN-SUFFIX,news-host.net,REJECT'
+  - 'DOMAIN-SUFFIX,news-mars.com,REJECT'
+  - 'DOMAIN-SUFFIX,news-muheji.com,REJECT'
+  - 'DOMAIN-SUFFIX,news-venere.com,REJECT'
   - 'DOMAIN-SUFFIX,newsforyoy.com,REJECT'
   - 'DOMAIN-SUFFIX,newsfrompluto.com,REJECT'
   - 'DOMAIN-SUFFIX,newstarads.com,REJECT'
@@ -6645,6 +6668,7 @@ rules:
   - 'DOMAIN-SUFFIX,nvmjdpbjgrh.com,REJECT'
   - 'DOMAIN-SUFFIX,nwmqhgeixqan.com,REJECT'
   - 'DOMAIN-SUFFIX,nyalacornily.cam,REJECT'
+  - 'DOMAIN-SUFFIX,nygwcwsvnu.com,REJECT'
   - 'DOMAIN-SUFFIX,nzaza.com,REJECT'
   - 'DOMAIN-SUFFIX,nzihjybdeq.com,REJECT'
   - 'DOMAIN-SUFFIX,nzurlmq.com,REJECT'
@@ -6746,6 +6770,7 @@ rules:
   - 'DOMAIN-SUFFIX,openvideoads.org,REJECT'
   - 'DOMAIN-SUFFIX,openx.angelsgroup.org.uk,REJECT'
   - 'DOMAIN-SUFFIX,ophan.theguardian.com,REJECT'
+  - 'DOMAIN-SUFFIX,ophoacit.com,REJECT'
   - 'DOMAIN-SUFFIX,opienetwork.com,REJECT'
   - 'DOMAIN-SUFFIX,opinionstage.com,REJECT'
   - 'DOMAIN-SUFFIX,oppvcuovgda.com,REJECT'
@@ -6798,6 +6823,7 @@ rules:
   - 'DOMAIN-SUFFIX,oxydend2r5umarb8oreum.com,REJECT'
   - 'DOMAIN-SUFFIX,oygohusvggaurod.xyz,REJECT'
   - 'DOMAIN-SUFFIX,ozongees.com,REJECT'
+  - 'DOMAIN-SUFFIX,ozsoekwgy.com,REJECT'
   - 'DOMAIN-SUFFIX,p.tanx.com,REJECT'
   - 'DOMAIN-SUFFIX,p4r24.eu,REJECT'
   - 'DOMAIN-SUFFIX,padp5arja8dgsd9cha.com,REJECT'
@@ -6903,7 +6929,6 @@ rules:
   - 'DOMAIN-SUFFIX,phobygipi.pro,REJECT'
   - 'DOMAIN-SUFFIX,phoenix-widget.com,REJECT'
   - 'DOMAIN-SUFFIX,phoka-mps.com,REJECT'
-  - 'DOMAIN-SUFFIX,phonearena.com,REJECT'
   - 'DOMAIN-SUFFIX,phoossax.net,REJECT'
   - 'DOMAIN-SUFFIX,photo-ads.co.uk,REJECT'
   - 'DOMAIN-SUFFIX,photographpan.com,REJECT'
@@ -6962,7 +6987,6 @@ rules:
   - 'DOMAIN-SUFFIX,planetactive.com,REJECT'
   - 'DOMAIN-SUFFIX,plantationthrillednoncommittal.com,REJECT'
   - 'DOMAIN-SUFFIX,platform.iteratehq.com,REJECT'
-  - 'DOMAIN-SUFFIX,plausible.io,REJECT'
   - 'DOMAIN-SUFFIX,play.leadzu.com,REJECT'
   - 'DOMAIN-SUFFIX,play.leadzutw.com,REJECT'
   - 'DOMAIN-SUFFIX,play4traffic.com,REJECT'
@@ -7153,6 +7177,7 @@ rules:
   - 'DOMAIN-SUFFIX,pxlctl.elpais.com,REJECT'
   - 'DOMAIN-SUFFIX,pymx5.com,REJECT'
   - 'DOMAIN-SUFFIX,pyrrh-xbf.com,REJECT'
+  - 'DOMAIN-SUFFIX,pyxiscablese.com,REJECT'
   - 'DOMAIN-SUFFIX,pzhuzlwjiymfos.com,REJECT'
   - 'DOMAIN-SUFFIX,q.azcentral.com,REJECT'
   - 'DOMAIN-SUFFIX,q.quora.com,REJECT'
@@ -7352,6 +7377,7 @@ rules:
   - 'DOMAIN-SUFFIX,ritzykey.com,REJECT'
   - 'DOMAIN-SUFFIX,riverhit.com,REJECT'
   - 'DOMAIN-SUFFIX,rjw4obbw.com,REJECT'
+  - 'DOMAIN-SUFFIX,rkjnazpgfihz.com,REJECT'
   - 'DOMAIN-SUFFIX,rle.ru,REJECT'
   - 'DOMAIN-SUFFIX,rlfvuficzdmsx.com,REJECT'
   - 'DOMAIN-SUFFIX,rlog.9gag.com,REJECT'
@@ -7426,6 +7452,7 @@ rules:
   - 'DOMAIN-SUFFIX,rxpsaofevrikmi.com,REJECT'
   - 'DOMAIN-SUFFIX,ryeeffortoccupy.com,REJECT'
   - 'DOMAIN-SUFFIX,ryeqnyvbncdvg.com,REJECT'
+  - 'DOMAIN-SUFFIX,rympsxilkdqywd.com,REJECT'
   - 'DOMAIN-SUFFIX,s.iaudienc.com,REJECT'
   - 'DOMAIN-SUFFIX,s.infogram.com,REJECT'
   - 'DOMAIN-SUFFIX,s.media-imdb.com,REJECT'
@@ -7436,6 +7463,7 @@ rules:
   - 'DOMAIN-SUFFIX,s3-analytics-events.easybrain.com,REJECT'
   - 'DOMAIN-SUFFIX,sabergood.com,REJECT'
   - 'DOMAIN-SUFFIX,sacralcabaa.com,REJECT'
+  - 'DOMAIN-SUFFIX,sadflannel.com,REJECT'
   - 'DOMAIN-SUFFIX,safebrowsdv.com,REJECT'
   - 'DOMAIN-SUFFIX,safegraph.com,REJECT'
   - 'DOMAIN-SUFFIX,safelyawake.com,REJECT'
@@ -7658,6 +7686,7 @@ rules:
   - 'DOMAIN-SUFFIX,soopukib.net,REJECT'
   - 'DOMAIN-SUFFIX,soperson.com,REJECT'
   - 'DOMAIN-SUFFIX,sortable.com,REJECT'
+  - 'DOMAIN-SUFFIX,sotchoum.com,REJECT'
   - 'DOMAIN-SUFFIX,spacash.com,REJECT'
   - 'DOMAIN-SUFFIX,spanuletubings.com,REJECT'
   - 'DOMAIN-SUFFIX,sparkstudios.com,REJECT'
@@ -8226,9 +8255,11 @@ rules:
   - 'DOMAIN-SUFFIX,uejwqbgtjxdw.com,REJECT'
   - 'DOMAIN-SUFFIX,ueypzubwo.com,REJECT'
   - 'DOMAIN-SUFFIX,uge521.com,REJECT'
+  - 'DOMAIN-SUFFIX,uhxmyqyevkcvit.com,REJECT'
   - 'DOMAIN-SUFFIX,uie.data.cbc.ca,REJECT'
   - 'DOMAIN-SUFFIX,uiowarvxpeni.com,REJECT'
   - 'DOMAIN-SUFFIX,uitopadxdy.com,REJECT'
+  - 'DOMAIN-SUFFIX,ujlrvzfws.com,REJECT'
   - 'DOMAIN-SUFFIX,ukbanners.com,REJECT'
   - 'DOMAIN-SUFFIX,ulrzovfukgkljw.com,REJECT'
   - 'DOMAIN-SUFFIX,ultimateclixx.com,REJECT'
@@ -8267,6 +8298,7 @@ rules:
   - 'DOMAIN-SUFFIX,updated.com,REJECT'
   - 'DOMAIN-SUFFIX,upgastlyr.com,REJECT'
   - 'DOMAIN-SUFFIX,upgulpinon.com,REJECT'
+  - 'DOMAIN-SUFFIX,upskittyan.com,REJECT'
   - 'DOMAIN-SUFFIX,upsnap.com,REJECT'
   - 'DOMAIN-SUFFIX,upspinarakor.com,REJECT'
   - 'DOMAIN-SUFFIX,uptolike.com,REJECT'
@@ -8391,6 +8423,7 @@ rules:
   - 'DOMAIN-SUFFIX,vkcache.com,REJECT'
   - 'DOMAIN-SUFFIX,vkcdn.online,REJECT'
   - 'DOMAIN-SUFFIX,vknalqcnfxu.com,REJECT'
+  - 'DOMAIN-SUFFIX,vknvimxmvsndhx.com,REJECT'
   - 'DOMAIN-SUFFIX,vlogerads.com,REJECT'
   - 'DOMAIN-SUFFIX,vlogoflife.com,REJECT'
   - 'DOMAIN-SUFFIX,vltwoizzckpp.com,REJECT'
@@ -8408,6 +8441,7 @@ rules:
   - 'DOMAIN-SUFFIX,vrqsvrnjrhdmek.com,REJECT'
   - 'DOMAIN-SUFFIX,vrs.cz,REJECT'
   - 'DOMAIN-SUFFIX,vs.tucows.com,REJECT'
+  - 'DOMAIN-SUFFIX,vstvstsa.com,REJECT'
   - 'DOMAIN-SUFFIX,vt.myvisualiq.net,REJECT'
   - 'DOMAIN-SUFFIX,vtracy.de,REJECT'
   - 'DOMAIN-SUFFIX,vugnubier.com,REJECT'
@@ -8540,10 +8574,13 @@ rules:
   - 'DOMAIN-SUFFIX,wowhugoo.com,REJECT'
   - 'DOMAIN-SUFFIX,wowshortvideos.com,REJECT'
   - 'DOMAIN-SUFFIX,wpnrtnmrewunrtok.xyz,REJECT'
+  - 'DOMAIN-SUFFIX,wpunativesh.com,REJECT'
+  - 'DOMAIN-SUFFIX,wpush.org,REJECT'
   - 'DOMAIN-SUFFIX,wqjbldnnceroue.com,REJECT'
   - 'DOMAIN-SUFFIX,wqzyxxrrep.com,REJECT'
   - 'DOMAIN-SUFFIX,wrapper.lemde.fr,REJECT'
   - 'DOMAIN-SUFFIX,wryfinger.com,REJECT'
+  - 'DOMAIN-SUFFIX,wseojloda.com,REJECT'
   - 'DOMAIN-SUFFIX,wt-eu02.net,REJECT'
   - 'DOMAIN-SUFFIX,wt.soundestlink.com,REJECT'
   - 'DOMAIN-SUFFIX,wtlive.com,REJECT'
@@ -8556,6 +8593,7 @@ rules:
   - 'DOMAIN-SUFFIX,www-banner.chat.ru,REJECT'
   - 'DOMAIN-SUFFIX,wxtnqppgaal.com,REJECT'
   - 'DOMAIN-SUFFIX,wyhifdpatl.com,REJECT'
+  - 'DOMAIN-SUFFIX,wynvalur.com,REJECT'
   - 'DOMAIN-SUFFIX,wyvpjsfhywm.com,REJECT'
   - 'DOMAIN-SUFFIX,wywy.com,REJECT'
   - 'DOMAIN-SUFFIX,wzelkaekmoman.com,REJECT'
@@ -8577,6 +8615,7 @@ rules:
   - 'DOMAIN-SUFFIX,xgzyfpmfkxa.com,REJECT'
   - 'DOMAIN-SUFFIX,xiti.com,REJECT'
   - 'DOMAIN-SUFFIX,xius.com,REJECT'
+  - 'DOMAIN-SUFFIX,xjqxegvywrkapx.com,REJECT'
   - 'DOMAIN-SUFFIX,xjrwxfdphc.com,REJECT'
   - 'DOMAIN-SUFFIX,xkesalwueyz.com,REJECT'
   - 'DOMAIN-SUFFIX,xlviiirdr.com,REJECT'
@@ -8711,9 +8750,10 @@ rules:
   - 'DOMAIN-SUFFIX,zosteraclumsy.website,REJECT'
   - 'DOMAIN-SUFFIX,zpbhjatpnaovj.com,REJECT'
   - 'DOMAIN-SUFFIX,zrljkhcwhxhh.com,REJECT'
+  - 'DOMAIN-SUFFIX,zrwpporp.com,REJECT'
   - 'DOMAIN-SUFFIX,zumobi.com,REJECT'
   - 'DOMAIN-SUFFIX,zuphaims.com,REJECT'
   - 'DOMAIN-SUFFIX,zvetokr2hr8pcng09.com,REJECT'
   - 'DOMAIN-SUFFIX,zxc.world,REJECT'
   - 'DOMAIN-SUFFIX,zz.bdstatic.com,REJECT'
-  - 'MATCH,2023-05-02-04-12-24'
+  - 'MATCH,2023-05-02-04-52-46'
