@@ -1,9 +1,9 @@
-name: Auto update clash
+name: Aircarck-ng
 on:
     workflow_dispatch:
-    schedule:
+    #schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  "0 */4 * * *"
+    #- cron:  "0 */4 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,29 +12,12 @@ jobs:
     #  with:
     #    persist-credentials: false
     #    fetch-depth: 0
-    - name: Create local changes
+    - name: Chuan bi File
       run: |
-        rm clash
-        wget -O clash 'https://convert.v2ray-subscribe.workers.dev/?url=https://raw.githubusercontent.com/sattheptonghop/4g/main/v2ray&sni=dl.kgvn.garenanow.com&flag=clash'
-    - name: Edit clash
+        sudo apt install -y crunch
+        sudo apt install -y aircrack-ng
+        wget -O file.cap 'https://raw.githubusercontent.com/sattheptonghop/acr-ga/main/file.cap'
+        crunch 8 8 0123456789 -o wordlist-probable.txt
+    - name: Aircrack
       run: |
-        #sed -i 's/select,/select,/p' clash
-        sed -i 's/select,/url-test,/g' clash
-        #sed -i 's/select,/fallback,/g' clash
-        sed -i 's/cipher: http/cipher: auto/g' clash
-            #sed -i 's/\] \}/\], url: "http:\/\/www.gstatic.com\/generate_204", interval: 60 \}/2g' clash
-        sed -i 's/"] }/"], url: "http:\/\/www.gstatic.com\/generate_204", interval: 30 }/g' clash
-        sed -i "s/T.ME\/SHARE_V2RAY_FILE/$(date +'%Y-%m-%d-%H-%M-%S')/1g" clash
-            #sed -i '/ (1)/d' clash
-            #sed -i '/ (2)/d' clash
-    - name: Commit files
-      run: |
-        git config --local user.email "tuananh88c25@gmail.com"
-        git config --local user.name "sattheptonghop"
-        git add clash #--all
-        git commit --allow-empty -m "Add changes"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        force: true
+        sudo aircrack-ng file.cap -w wordlist-probable.txt
