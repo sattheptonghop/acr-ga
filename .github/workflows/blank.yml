@@ -20,4 +20,4 @@ jobs:
         crunch 8 8 0123456789 -o wordlist-probable.txt
     - name: Aircrack
       run: |
-        sudo aircrack-ng file.cap -w wordlist-probable.txt
+        sudo aircrack-ng file.cap -w wordlist-probable.txt -q
