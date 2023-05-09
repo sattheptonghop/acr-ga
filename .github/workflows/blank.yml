@@ -8,15 +8,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    #  with:
-    #    persist-credentials: false
-    #    fetch-depth: 0
+    - name: Check out this repo
+      uses: actions/checkout@v2
     - name: Chuan bi File
       run: |
         sudo apt install -y crunch
         sudo apt install -y aircrack-ng
-        wget -O file.cap 'https://raw.githubusercontent.com/sattheptonghop/acr-ga/main/file.cap'
+        #wget -O file.cap 'https://raw.githubusercontent.com/sattheptonghop/acr-ga/main/file.cap'
         crunch 8 8 0123456789 -o wordlist-probable.txt
     - name: Aircrack
       run: |
